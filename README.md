@@ -1,6 +1,8 @@
 #*** JAVA Exercises ***
 ***********************
 
+From: http://math.hws.edu/eck/cs124/javanotes7/
+
 ## **Personal notes:**  
 1/ Syntaxe of exercises: cocolollipop-Exo  
 2/ Do not forget to add /bin in .gitignore  

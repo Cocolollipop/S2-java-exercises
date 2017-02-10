@@ -1,3 +1,3 @@
-#Exercices de java 
+#*** JAVA Exercises ***
+***********************
 
-##

@@ -1,4 +1,4 @@
-#*** Solution for EXERCICE 5.7 ***
+#*** Solution for EXERCISE 5.7 ***
 *********************
 
 Supplementary requirements: your code must lie in at least two packages;

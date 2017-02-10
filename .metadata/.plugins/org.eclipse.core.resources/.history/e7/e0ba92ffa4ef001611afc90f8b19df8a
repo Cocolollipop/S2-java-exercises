@@ -1,0 +1,12 @@
+package element;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+
+public class Reader {
+
+	private ArrayList<String> listOfWords;
+	FileInputStream in = new FileInputStream("input.txt");
+	
+	
+}

@@ -49,7 +49,7 @@ public class Reader {
 				 * duplication spaces by only one space Puts all the letters in
 				 * lower case
 				 */
-				String[] words = str.replaceAll("[^a-zA-Z0-9]", " ").replaceAll("( ){2,}", " ").toLowerCase()
+				String[] words = str.replaceAll("[^'a-zA-Z0-9]", " ").replaceAll("( ){2,}", " ").toLowerCase()
 						.split(" ");
 				listOfWords.addAll(Arrays.asList(words));
 			}

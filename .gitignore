@@ -1,3 +1,4 @@
-.metadata/
-.recommenders/
-cocolollipop-EE10.2/
+/.metadata/
+/.recommenders/
+/cocolollipop-EE10.2/
+*.DS_Store 

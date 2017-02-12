@@ -1,0 +1,1 @@
+INDEX VERSION 1.129+/Users/Cocolollipop/Desktop/S4-JAVA/.metadata/.plugins/org.eclipse.jdt.core

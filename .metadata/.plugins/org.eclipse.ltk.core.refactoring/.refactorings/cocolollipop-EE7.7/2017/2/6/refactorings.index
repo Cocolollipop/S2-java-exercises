@@ -1,5 +1,0 @@
-1486770572638	Convert local variable 'str' to field
-1486775407752	Inline local variable 'in'
-1486775473496	Extract method 'extracted'
-1486776087005	Convert local variable 'words' to field
-1486812328816	Copy file

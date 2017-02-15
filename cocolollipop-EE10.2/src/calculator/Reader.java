@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Reader {
 	
 	/**
-	 * Uses a regex expression to verify the format
+	 * Uses a regular expression to verify the format
 	 * 
 	 * @return if the format is correct or not
 	 */

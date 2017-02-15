@@ -30,11 +30,11 @@ public class SetCalculator {
 			operator = '*';
 		}
 		/**
-		 * Remove blank spaces
+		 * Removes blank spaces
 		 */
 		String theSecondSet = theSet.replaceAll(" ", "");
 		/**
-		 * Split the sets by the operator
+		 * Splits the sets by the operator
 		 */
 		String[] tabOfSets = theSecondSet.split("(\\+|\\-|\\*)");
 		/**
@@ -84,7 +84,7 @@ public class SetCalculator {
 	}
 
 	/**
-	 * calculate the operation on two sets according to the operator given in
+	 * Calculates the operation on two sets according to the operator given in
 	 * entry using TreeSet's methods
 	 * 
 	 * @param operator

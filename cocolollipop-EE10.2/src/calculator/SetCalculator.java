@@ -6,28 +6,30 @@ import java.util.TreeSet;
 
 public class SetCalculator {
 	private List<TreeSet<Integer>> listOfSet = new LinkedList<>();
+	private char operator;
 
 	/**
 	 * Separates the in line command into two sets and calculates the operation
 	 * on these sets
 	 * 
 	 * @param theSet
+	 * @return 
 	 */
-	public void separateAndCalculateSets(String theSet) {
+	public List<TreeSet<Integer>> separateSets(String theSet) {
 		System.out.println(theSet);
 		/**
 		 * Reads the operator
 		 */
-		char operator = 'e';
+		this.operator = 'e';
 
 		if (theSet.contains("-")) {
-			operator = '-';
+			this.operator = '-';
 		}
 		if (theSet.contains("+")) {
-			operator = '+';
+			this.operator = '+';
 		}
 		if (theSet.contains("*")) {
-			operator = '*';
+			this.operator = '*';
 		}
 		/**
 		 * Removes blank spaces
@@ -73,14 +75,11 @@ public class SetCalculator {
 			/**
 			 * Puts the treeSetOfNumbers into the listOfSet
 			 */
-			this.listOfSet.add(treeSetOfNumbers);
-			System.out.println(this.listOfSet);
+			this.getListOfSet().add(treeSetOfNumbers);
+			System.out.println(this.getListOfSet());
 
 		} // end for all sets in the table
-		/**
-		 * Calculates the operation on two sets
-		 */
-		calculateOnTwoSets(operator);
+		return this.getListOfSet();
 	}
 
 	/**
@@ -89,14 +88,14 @@ public class SetCalculator {
 	 * 
 	 * @param operator
 	 */
-	public void calculateOnTwoSets(char operator) {
+	public void calculateOnTwoSets() {
 
 		TreeSet<Integer> firstSet = new TreeSet<>();
-		firstSet = listOfSet.get(0);
+		firstSet = getListOfSet().get(0);
 		TreeSet<Integer> secondSet = new TreeSet<>();
-		secondSet = listOfSet.get(1);
+		secondSet = getListOfSet().get(1);
 
-		switch (operator) {
+		switch (this.operator) {
 
 		case '+':
 			System.out.print(firstSet + "+" + secondSet + "=");
@@ -121,4 +120,13 @@ public class SetCalculator {
 
 	}
 
+	public List<TreeSet<Integer>> getListOfSet() {
+		return listOfSet;
+	}
+
+	public void setListOfSet(List<TreeSet<Integer>> listOfSet) {
+		this.listOfSet = listOfSet;
+	}
+
+	
 }

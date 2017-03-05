@@ -12,4 +12,5 @@ git commit -am "Removing metadata"
 
 ## **Commands**
 1/Ctrl+Shift+F : Indentation  
-2/Ctrl+Shift+O : Organized import
+2/Ctrl+Shift+O : Organized import  
+3/git push origin master --force
